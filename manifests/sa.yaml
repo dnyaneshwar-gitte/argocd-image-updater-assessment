@@ -4,4 +4,4 @@ metadata:
   name: argocd-image-updater
   namespace: argocd
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::YOUR_AWS_ACCOUNT_ID:role/ECRAccessRole
+    eks.amazonaws.com/role-arn: arn:aws:iam::038462753889:role/ECRAccessRole

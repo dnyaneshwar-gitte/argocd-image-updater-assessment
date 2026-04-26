@@ -4,7 +4,7 @@ metadata:
   name: image-updater-demo
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: demo=YOUR_ECR_REPO_URL
+    argocd-image-updater.argoproj.io/image-list: demo=038462753889.dkr.ecr.us-east-1.amazonaws.com/image-updater-demo
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/demo.force-update: "true"
@@ -12,7 +12,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USERNAME/argocd-image-updater-assessment.git
+    repoURL: https://github.com/dnyaneshwar-gitte/argocd-image-updater-assessment.git
     targetRevision: main
     path: helm
   destination:
