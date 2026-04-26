@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: YOUR_ECR_REPO_URL
+  tag: v1.0.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-updater-demo-service
+spec:
+  type: { { .Values.service.type } }
+  selector:
+    app: image-updater-demo
+  ports:
+    - port: { { .Values.service.port } }
+      targetPort: { { .Values.service.targetPort } }
